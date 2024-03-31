@@ -10,7 +10,7 @@
     "linkcheck": "lychee --config ./lychee.toml --quiet \"./pages\"",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next build && npx serve@latest out",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
