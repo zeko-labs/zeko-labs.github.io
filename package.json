@@ -14,43 +14,36 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@feelback/react": "^0.3.4",
-    "next": "13.5.1",
-    "next-sitemap": "^4.2.3",
+    "@feelback/react": "latest",
+    "next": "latest",
+    "next-sitemap": "latest",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "@double-great/remark-lint-alt-text": "^1.0.0",
-    "@types/node": "18.11.10",
-    "cspell": "^8.1.3",
-    "eslint": "^8.53.0",
-    "eslint-plugin-mdx": "^2.2.0",
+    "@double-great/remark-lint-alt-text": "latest",
+    "@types/node": "latest",
+    "cspell": "latest",
+    "eslint": "latest",
+    "eslint-plugin-mdx": "latest",
     "ethers": "^5",
-    "remark": "^15.0.1",
-    "remark-code-import": "^1.2.0",
-    "remark-frontmatter": "^5.0.0",
-    "remark-gfm": "^3.0.1",
-    "remark-lint-frontmatter-schema": "^3.15.4",
-    "remark-lint-heading-style": "^3.1.2",
-    "remark-lint-list-item-indent": "^3.1.2",
-    "remark-lint-table-cell-padding": "^4.1.3",
-    "remark-lint-table-pipe-alignment": "^3.1.3",
-    "remark-lint-table-pipes": "^4.1.2",
-    "remark-lint-unordered-list-marker-style": "^3.1.2",
-    "remark-preset-lint-consistent": "^5.1.2",
-    "remark-preset-lint-recommended": "^6.1.3",
-    "typescript": "^5.2.2",
-    "unified-lint-rule": "^2.1.2",
-    "unist-util-visit": "^5.0.0"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "remark-lint-frontmatter-schema@3.15.4": "patches/remark-lint-frontmatter-schema@3.15.4.patch",
-      "remark-code-import@1.2.0": "patches/remark-code-import@1.2.0.patch",
-      "nextra@2.13.2": "patches/nextra@2.13.2.patch"
-    }
+    "remark": "latest",
+    "remark-code-import": "latest",
+    "remark-frontmatter": "latest",
+    "remark-gfm": "latest",
+    "remark-lint-frontmatter-schema": "latest",
+    "remark-lint-heading-style": "latest",
+    "remark-lint-list-item-indent": "latest",
+    "remark-lint-table-cell-padding": "latest",
+    "remark-lint-table-pipe-alignment": "latest",
+    "remark-lint-table-pipes": "latest",
+    "remark-lint-unordered-list-marker-style": "latest",
+    "remark-preset-lint-consistent": "latest",
+    "remark-preset-lint-recommended": "latest",
+    "typescript": "latest",
+    "unified-lint-rule": "latest",
+    "unist-util-visit": "latest"
   }
 }
