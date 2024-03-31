@@ -24,6 +24,10 @@
       "pagination": false
     }
   },
+  "zeko": {
+    "title": "Redirecting...",
+    "display": "hidden"
+  },
 
   "index": "Introduction",
   "da-layer": "Zeko data availability contracts",
