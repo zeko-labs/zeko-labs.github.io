@@ -1,6 +1,6 @@
 # Zeko Docs
 
-This repo houses the Zeko Docs located at [docs.zeko.io](https://docs.zeko.io/). All documentation-related updates and new content will be tracked and maintained in this repo.
+This repo houses the Zeko Docs located at [zeko-labs.github.io](https://zeko-labs.github.io/). All documentation-related updates and new content will be tracked and maintained in this repo.
 
 ## Local Development
 
@@ -16,7 +16,7 @@ Please see the [CONTRIBUTING.md](CONTRIBUTING.md) page for specifics on how to w
 
 ## Project Board
 
-You can track documentation [issues](https://github.com/ethereum-zeko/docs/issues) or submit documentation [requests](https://github.com/ethereum-Zeko/docs/issues/new/choose) directly from this repo.
+You can track documentation [issues](https://github.com/zeko-labs/zeko-labs.github.io/issues) or submit documentation [requests](https://github.com/zeko-labs/zeko-labs.github.io/issues/new/choose) directly from this repo.
 
 ## License
 

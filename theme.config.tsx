@@ -43,7 +43,7 @@ const config: DocsThemeConfig = {
   ),
   darkMode: true,
   project: {
-    link: "https://github.com/zeko-labs/docs",
+    link: "https://github.com/zeko-labs/zeko-labs.github.io",
   },
   footer: {
     text: "Zeko Documentation",
@@ -86,7 +86,7 @@ const config: DocsThemeConfig = {
     const { asPath, defaultLocale, locale } = useRouter();
     const { frontMatter } = useConfig();
     const url =
-      "https://docs.zeko.io" +
+      "https://zeko-labs.github.io/" +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
 
     return (
