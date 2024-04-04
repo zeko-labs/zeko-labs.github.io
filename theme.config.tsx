@@ -2,7 +2,6 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
 import { useConfig } from "nextra-theme-docs";
-import { FeelbackYesNo, PRESET_LIKE_DISLIKE } from "@feelback/react";
 import "@feelback/react/styles/feelback.css";
 
 const config: DocsThemeConfig = {
@@ -11,7 +10,7 @@ const config: DocsThemeConfig = {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1288.74 345.59"
-        width="194"
+        width="134"
         height="32"
       >
         <path
@@ -43,7 +42,7 @@ const config: DocsThemeConfig = {
   ),
   darkMode: true,
   project: {
-    link: "https://github.com/zeko-labs/zeko-labs.github.io",
+    link: "https://github.com/zeko-labs/zeko",
   },
   footer: {
     text: "Zeko Documentation",
@@ -52,27 +51,11 @@ const config: DocsThemeConfig = {
     defaultMenuCollapseLevel: 1,
     autoCollapse: true,
   },
-  toc: {
-    backToTop: true,
-    extraContent: () => (
-      <>
-        <hr className="divider top-divider" />
-        <FeelbackYesNo
-          contentSetId="b2983747-797d-4e6e-9ea3-15d59b9c27ce"
-          preset={PRESET_LIKE_DISLIKE}
-          textQuestion="Is this page useful?"
-          textAnswer="Thanks for your feedback :)"
-        />
-        <hr className="divider" />
-      </>
-    ),
-  },
   feedback: {
-    content: "❤️ Share general feedback",
-    labels: "user-feedback",
+    content: "",
   },
   editLink: {
-    text: "✏️ Edit this page on GitHub",
+    text: "",
   },
   useNextSeoProps() {
     const { asPath } = useRouter();
