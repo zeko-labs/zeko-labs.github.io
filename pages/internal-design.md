@@ -50,8 +50,9 @@ from emptying their accounts, meaning the sequencer's submitted transaction
 would fail, DoSing the rollup.
 
 There _are_ ways to solve this with `receipt_chain_hash`, but
-1) They are complicated.
-2) They can not work well when the `set_verification_key` permission is `Signature` or `Either`.
+
+1. They are complicated.
+2. They can not work well when the `set_verification_key` permission is `Signature` or `Either`.
 
 We opt to instead push this responsibility onto the user.
 The user can finalize the transfer if they can prove it hasn't happened before.
@@ -65,6 +66,7 @@ not have processed any transfers before!
 #### Token approach
 
 A transfer has two stages:
+
 - Submission (add action)
 - Processing (move funds from Zeko account to user account)
 
@@ -87,3 +89,7 @@ Thus, they can never make an update which isn't also underneath the inner/outer 
 
 To simplify this, we make the inner/outer account the token owner, removing
 the need for tracking the public key of the token owner.
+
+## More in white paper
+
+If you are interested in reading more of internal design, please refer to the [white paper](https://docsend.com/view/f9a6kgdr4tjwuqng).

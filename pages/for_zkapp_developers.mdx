@@ -23,4 +23,12 @@ Following API calls are available in the Auro wallet to manipulate with the netw
 
 To use O1js with custom network you need to specify it when specifying the Network.
 
-TODO: add example once O1js implements this
+```typescript
+const network = Mina.Network({
+  networkId: "zeko",
+  mina: sequencerUri,
+  archive: sequencerUri,
+});
+
+Mina.setActiveInstance(network);
+```
