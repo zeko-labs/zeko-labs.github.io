@@ -5,6 +5,15 @@ lang: en-US
 
 # Zeko sequencer
 
+## Zeko's Transaction Powerhouse
+
+Think of the sequencer as the conductor of an orchestra in Zeko. It plays a vital role in keeping everything running smoothly. Here's what it does:
+
+1. **Transaction Collector**: The sequencer acts like a tireless collector, gathering these transactions and applying them to the current state.
+2. **Proof Verifier**: The sequencer prooves the validity of these transactions using zero-knowledge proofs. This ensures only legitimate transactions enter the system.
+3. **Batch Processor**: The sequencer doesn't process transactions one by one. Instead, it efficiently groups them into batches for more efficient settling on layer 1.
+4. **Layer 1 Bridge**: Once a batch is ready, the sequencer sends it to the main chain (Layer 1) via a smart contract. This keeps Layer 1 informed about the activity happening on Zeko.
+
 ## Build
 
 ```bash
