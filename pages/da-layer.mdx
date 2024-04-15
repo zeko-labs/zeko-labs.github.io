@@ -1,9 +1,44 @@
 ---
-title: Zeko data availability contracts
+title: Zeko data availability
 lang: en-US
 ---
 
+# Zeko's Modular Data Availability Layer
+
+A critical component of any rollup system is the data availability layer. This layer is responsible for storing all the transaction data that occurs on the rollup. Here's a breakdown of the DAL's role and its unique implementation within Zeko:
+
+## What is a Data Availability Layer?
+
+Imagine a rollup as a busy highway where transactions zip by. The main chain (Layer 1) can only handle a limited number of transactions, so rollups take the overflow and process them efficiently.
+But for the system to be secure, everyone needs access to this transaction data.
+That's where the DAL comes in. It acts as a giant archive, storing all the rollup's transaction data and making it readily available for anyone to verify.
+
+## Why is a DA-layer Important for Rollups?
+
+There are two main reasons:
+
+1. **Security**: With the transaction data publicly available, anyone can check if the rollup is processing transactions correctly. This helps prevent fraud and ensures the integrity of the system.
+2. **Decentralization**: By not relying solely on the main chain for data storage, rollups become more decentralized. This means they are less susceptible to censorship or downtime.
+
+## What could happen without DA-layer?
+
+Imagine a world where Zeko, or any rollup system, lacked a data availability layer.
+In case the adverse sequencer would not share a batch of transactions, it would be impossible to reconstruct the rollup's state.
+Without up-to-date state there is no way to apply new transactions.
+
+## Zeko's Modular Approach to the DA
+
+Unlike some other rollups, Zeko takes a modular approach to the DA. This means that the DA layer is a separate component that can be swapped out for different solutions. This offers several advantages:
+
+- **Flexibility**: Developers can choose a DA-layer that best suits their specific needs. For example, they might prioritize cost-effectiveness, high security, or specific functionalities.
+- **Customization**: Zeko allows developers to build their own custom DA-layer solutions, providing ultimate control and tailoring to their application's unique requirements.
+- **Future-Proofing**: Zeko is actively exploring integration with solutions like Celestia, a dedicated data availability network. This integration will offer developers access to cutting-edge advancements in the field.
+
+In essence, Zeko's modular DA-layer empowers developers with unparalleled flexibility and control over how their rollup stores and verifies its crucial transaction data.
+
 # Zeko data availability contracts
+
+Zeko currently uses temporary DA-layer, an fork of EVM chain ethermint with instant finality consensus. For more information you can read the [white paper](https://docsend.com/view/f9a6kgdr4tjwuqng).
 
 ## Installation
 
